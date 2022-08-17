@@ -18,3 +18,37 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Calendar Component Styling */
+.calendarDays {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+  border-radius: 50px;
+}
+
+.calendarDaysSelected {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.25rem;
+  border-radius: 50px;
+
+  border: 1px solid #eb00ff;
+}
+
+.calendarDate {
+  padding: 10px 12px;
+  gap: 10px;
+}
+
+.calendarDateSelected {
+  padding: 10px 12px;
+  gap: 10px;
+
+  background: linear-gradient(133.51deg, #2c0aff 0.66%, #eb00ff 100.66%);
+  border-radius: 50%;
+}

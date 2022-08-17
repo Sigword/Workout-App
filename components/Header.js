@@ -9,7 +9,7 @@ const Header = () => {
         <span className={styles.userNameText}>DADDY</span>
       </div>
       <div className={styles.profileContainer}>
-        <p>USER IMAGE</p>
+        <p>USER-IMAGE</p>
       </div>
     </div>
   );

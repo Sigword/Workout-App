@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Calendar from "../components/Calendar";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
 
       <Header />
+      <Calendar />
     </div>
   );
 }
