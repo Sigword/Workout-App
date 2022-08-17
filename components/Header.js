@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <div className={styles.headerContainer}>
       <div className={styles.userContainer}>
-        <span>Hello, </span>
-        <span>USERNAME</span>
+        <span>HELLO, </span>
+        <span className={styles.userNameText}>DADDY</span>
       </div>
       <div className={styles.profileContainer}>
         <p>USER IMAGE</p>

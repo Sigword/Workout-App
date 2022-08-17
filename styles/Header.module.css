@@ -17,5 +17,17 @@
 }
 .userContainer span {
   display: block;
-  font-size: 1rem;
+}
+
+.userNameText {
+  font-weight: 700;
+  font-size: 1.25rem;
+
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profileContainer {
 }
