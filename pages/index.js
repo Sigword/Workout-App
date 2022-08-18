@@ -16,11 +16,11 @@ export default function Home() {
       </Head>
 
       <Header />
-<<<<<<< HEAD
+
       <Quote />
       <Work />
       <Chat />
-=======
+
       <Calendar />
     </div>
   );
