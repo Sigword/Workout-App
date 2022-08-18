@@ -1,11 +1,13 @@
-import styles from "../styles/gym.module.css";
+import styles from "../styles/Gym.module.css";
 
 const Gym = () => {
   return (
-    <div className={styles.chatMain}>
-      <div className={styles.chatBox}>
-        <div className={styles.chatText}>GYM TIME</div>
-        <div className={styles.chatLogo}>7:00</div>
+    <div className={styles.gymTimeContainer}>
+      <div className={styles.gymTime}>
+        <div className={styles.gymTimeText}>GYM TIME</div>
+        <div className={styles.gymTimeInput}>
+          <input type="text" placeholder="7:00PM" />
+        </div>
       </div>
     </div>
   );
