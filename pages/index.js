@@ -22,7 +22,6 @@ export default function Home() {
       <Chat />
 =======
       <Calendar />
->>>>>>> b797bb1c57a5f25a170f0f6797e1ad40480518c8
     </div>
   );
 }
