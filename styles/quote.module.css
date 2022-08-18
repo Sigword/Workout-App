@@ -29,10 +29,23 @@
 .quoteBottom {
   display: flex;
   justify-content: center;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
   color: white;
   background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
   border-radius: 1rem;
   padding: 1rem;
+}
+
+.quoteBottom span {
+  font-size: 1.5rem;
+}
+
+.quoteBottom textarea {
+  border: none;
+  background: transparent;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  line-height: 1.1rem;
+  color: white;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
 }
