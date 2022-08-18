@@ -16,12 +16,10 @@ export default function Home() {
       </Head>
 
       <Header />
-
+      <Calendar />
       <Quote />
       <Work />
       <Chat />
-
-      <Calendar />
     </div>
   );
 }
