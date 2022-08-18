@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Calendar from "../components/Calendar";
 import Header from "../components/Header";
 import Chat from "../components/Chat";
 import Work from "../components/Work";
@@ -15,9 +16,13 @@ export default function Home() {
       </Head>
 
       <Header />
+<<<<<<< HEAD
       <Quote />
       <Work />
       <Chat />
+=======
+      <Calendar />
+>>>>>>> b797bb1c57a5f25a170f0f6797e1ad40480518c8
     </div>
   );
 }

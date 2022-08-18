@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 1.5rem 0.625rem;
+  padding: 1.25rem 0rem;
   gap: 2.625rem;
   color: rgb(240, 240, 240);
 }
