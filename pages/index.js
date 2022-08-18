@@ -5,6 +5,7 @@ import Chat from "../components/Chat";
 import Work from "../components/Work";
 import Quote from "../components/Quote";
 import styles from "../styles/Home.module.css";
+import Gym from "../components/GymTime";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
 
       <Header />
       <Calendar />
+      <Gym />
       <Quote />
       <Work />
       <Chat />
