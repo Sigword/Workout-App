@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import Chat from "../components/Chat";
+import Work from "../components/Work";
+import Quote from "../components/Quote";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -12,6 +15,9 @@ export default function Home() {
       </Head>
 
       <Header />
+      <Quote />
+      <Work />
+      <Chat />
     </div>
   );
 }

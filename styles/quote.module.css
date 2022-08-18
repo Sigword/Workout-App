@@ -1,0 +1,38 @@
+.quoteMain {
+  background-color: #0c0c0c;
+  min-width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.quoteBox {
+  background-color: #161616;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.quoteTop {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  padding: 0.6rem 0.9rem 0.9rem 0.9rem;
+}
+
+.quoteBottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  border-radius: 1rem;
+  padding: 1rem;
+}
