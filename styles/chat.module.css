@@ -1,7 +1,7 @@
 .chatMain {
   background-color: #0c0c0c;
-  padding: 0rem, 1.5rem;
-  min-width: 100%;
+  padding: 1rem 0rem;
+  width: 100%;
   display: block;
   justify-content: center;
 }
@@ -12,11 +12,11 @@
   display: flex;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
   letter-spacing: 0.1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .chatText {
@@ -25,12 +25,24 @@
   display: flex;
   justify-content: center;
   width: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 1rem;
 }
 
 .chatLogo {
   padding: 0rem, 1.25rem;
   display: flex;
+  vertical-align: middle;
   justify-content: center;
+  font-size: 3rem;
   width: 50%;
-  color: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  font-family: "Montserrat", sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
