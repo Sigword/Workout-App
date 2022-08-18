@@ -1,9 +1,8 @@
 .chatMain {
-  background-color: #0c0c0c;
   padding: 1rem 0rem;
   width: 100%;
-  display: block;
   justify-content: center;
+  align-items: center;
 }
 
 .chatBox {
@@ -11,10 +10,9 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
-  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1rem;
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 700;
   color: white;
   padding: 2rem;
 }

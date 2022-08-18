@@ -1,4 +1,4 @@
-import styles from "../styles/quote.module.css";
+import styles from "../styles/Quote.module.css";
 
 const Quote = () => {
   return (
@@ -6,7 +6,13 @@ const Quote = () => {
       <div className={styles.quoteBox}>
         <div className={styles.quoteTop}>Quote of the Day</div>
         <div className={styles.quoteBottom}>
-          "Whether you think you can or you can't, you're right."
+          <textarea
+            placeholder="Epic Quote"
+            name=""
+            id=""
+            cols="30"
+            rows="3"
+          ></textarea>
         </div>
       </div>
     </div>
