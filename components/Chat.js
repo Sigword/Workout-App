@@ -5,7 +5,9 @@ const Chat = () => {
   return (
     <div className={styles.chatMain}>
       <div className={styles.chatBox}>
-        <div className={styles.chatText}>Chat</div>
+        <div className={styles.chatText}>
+          <a href="auth">Chat</a>
+        </div>
         <div className={styles.chatLogo}>
           <svg width="0" height="0">
             <linearGradient
