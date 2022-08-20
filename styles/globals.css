@@ -23,38 +23,41 @@ a {
 .calendarDays {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0rem;
-  border-radius: 50px;
-  flex: 1;
+
+  padding: 9px 0px;
+}
+
+.calendarDays span {
+  padding: 7px 0px;
+}
+
+.calendarDaysSelected span {
+  padding: 7px;
 }
 
 .calendarDaysSelected {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.35rem 0.2rem;
+
+  padding: 9px 3px;
+
   border-radius: 50px;
-  flex: 1;
-
   border: 1px solid #eb00ff;
-}
-
-.calendarDaysSelected span {
-  padding: 5px 3px;
 }
 
 .calendarDate {
   padding: 10px 12px;
-  gap: 10px;
 }
 
 .calendarDateSelected {
+  background: linear-gradient(133.51deg, #2c0aff 0.66%, #eb00ff 100.66%);
+  border-radius: 100px;
+  padding: 10px 12px;
+
   width: 100%;
   text-align: center;
-  padding: 10px 0px;
-  background: linear-gradient(133.51deg, #2c0aff 0.66%, #eb00ff 100.66%);
-  border-radius: 50%;
 }

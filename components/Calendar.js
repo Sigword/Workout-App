@@ -1,5 +1,4 @@
 import styles from "../styles/Calendar.module.css";
-import { useState } from "react";
 
 const Calendar = () => {
   const calendarCreator = () => {
