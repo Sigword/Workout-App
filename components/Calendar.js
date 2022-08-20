@@ -1,36 +1,23 @@
 import styles from "../styles/Calendar.module.css";
+import { useState } from "react";
 
 const Calendar = () => {
+  const [date, setDate] = useState("");
+  const [day, setDay] = useState("");
+  const [currentDateStyles, setCurrentDateStyles] = useState("calendarDate");
+  const [currentDayStyles, setCurrentDayStyles] = useState("calendarDays");
+
+  const days = [1, 2, 3, 4, 5, 6, 7];
+
+  const dateHandler = () => {
+    const d = new Date();
+    console.log(d.getDate());
+    console.log(d.getDay());
+  };
+
   return (
     <div className={styles.calendarContainer}>
-      <div className="calendarDays">
-        <p>MON</p>
-        <span className="calendarDate">15</span>
-      </div>
-      <div className="calendarDaysSelected">
-        <p>TUE</p>
-        <span className="calendarDateSelected">16</span>
-      </div>
-      <div className="calendarDays">
-        <p>WED</p>
-        <span className="calendarDate">17</span>
-      </div>
-      <div className="calendarDays">
-        <p>THU</p>
-        <span className="calendarDate">18</span>
-      </div>
-      <div className="calendarDays">
-        <p>FRI</p>
-        <span className="calendarDate">19</span>
-      </div>
-      <div className="calendarDays">
-        <p>SAT</p>
-        <span className="calendarDate">20</span>
-      </div>
-      <div className="calendarDays">
-        <p>SUN</p>
-        <span className="calendarDate">21</span>
-      </div>
+      <h1>HELL</h1>
     </div>
   );
 };
