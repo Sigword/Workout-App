@@ -6,8 +6,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   background-color: #0c0c0c;
-
-  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -17,6 +15,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Calendar Component Styling */
@@ -64,221 +63,180 @@ a {
 
 /* Chat Stylings */
 
-/* Chat List */
-.ce-wrapper {
-  background-color: #161616;
+.anticon {
+  color: white !important;
 }
 
+/* My Chats Page */
+
 .ce-chats-container {
-  background-color: #161616;
-  border-radius: 0px;
+  background-color: #161616 !important;
+  border-radius: 0px !important;
 }
 
 .ce-chat-form-container {
-  background-color: #161616;
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background-color: #0c0c0c !important;
+  color: whitesmoke !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  margin-bottom: 1rem;
+}
+
+.ce-chat-form-container button {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
 }
 
 .ce-chat-card {
-  margin: 0px 6px;
+  background-color: #0c0c0c !important;
+  border-radius: 20px !important;
+  margin: 1rem 0.5rem;
+  color: white !important;
+  border: none !important;
 }
 
-.ce-chat-card-loading-bar {
-  background-color: #161616;
-}
-
-.ce-active-chat-card {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-}
-
-.ce-chat-title-text {
-  color: white;
-}
-
-.ce-chat-subtitle-text {
-  color: #ffffff;
-}
-
-.ce-chat-unread-dot {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.ce-chat-card.ce-active-chat-card {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
 }
 
 /* Chat Feed */
+
+.ce-chat-feed-container {
+  background-color: #161616 !important;
+}
+
+.ce-chat-title-container {
+  color: white !important;
+  background-color: #0c0c0c !important;
+}
+
+.ce-message-date-text {
+  color: whitesmoke !important;
+}
+
+.ce-their-message-sender {
+  color: whitesmoke !important;
+}
+
+.ce-message-bubble {
+  background-color: #0c0c0c !important;
+  color: white !important;
+}
+
+.ce-message-bubble.ce-my-message-bubble {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
+}
+
+.ce-message-input-form {
+  background-color: #161616 !important;
+}
+
+.ce-message-input-form textarea {
+  color: white !important;
+  background-color: #161616 !important;
+  border: none !important;
+}
+
+.ce-message-input-form button {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
+}
+
+.ce-chat-unread-dot {
+  background-color: white !important;
+}
+
+/* Chat Settings */
+.ce-settings {
+  background-color: #161616 !important;
+}
+
+.ce-chat-title-form {
+  margin-bottom: 0.75rem !important;
+}
+
+.ce-input.ce-text-input {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
+
+  color: white !important;
+}
+
+.ce-section-title {
+  color: white !important;
+}
+
+.ce-section-title:hover {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
+}
+
+.ce-person-container {
+  color: white !important;
+}
+
+#ce-add-username-input {
+  background-color: #0c0c0c !important;
+  color: white !important;
+  border: none !important;
+}
+
+#ce-options-drop-down {
+  color: white !important;
+}
+
+#ce-options-drop-down:hover {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
+}
+
+/* Mobile Chat Feed */
 
 .ce-chat-title {
   background-color: #0c0c0c !important;
 }
 
-.ce-chat-list-mobile-option svg {
-  color: white;
-}
-
-.ce-chat-settings-mobile-option svg {
-  color: white;
-}
-
-.ce-chat-feed-container {
-  background-color: #161616;
-}
-
-.ce-primary-button {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-}
-
-.ce-message-date-text {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.ce-my-message-bubble {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; */
-}
-
-.ce-my-message-sinding-bubble {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-}
-
-.ce-my-message-timestamp {
-  color: #9a97fc;
-}
-
-.ce-their-message-timestamp {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-#ce-send-message-button {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-}
-
-#ce-ice-breaker-gif {
-  max-width: 115px;
-  margin-top: 30px;
-}
-
-.ce-social-message-form {
-  background-color: #161616;
-}
-
-.ce-message-input-form {
-  padding-bottom: 10px;
-  background-color: #0c0c0c;
-}
-
-.ce-message-input-form {
-}
-
-#msg-textarea {
-  width: calc(100% - 140px);
-  background-color: #0c0c0c;
-  color: white;
+.ce-chat-list-mobile-option > div > div > div {
+  background-color: #0c0c0c !important;
+  color: white !important;
   border: none !important;
 }
-#msg-textarea::placeholder {
-  /* background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; */
-}
 
-#upload-document-button svg {
-  color: white;
-}
-
-#ce-upload-document-icon {
-  color: white;
-}
-
-#ce-feed-container {
-  background-color: #161616 !important;
-}
-
-#msg-form-container {
+.ce-chat-settings-mobile-option > div > div > div {
   background-color: #0c0c0c !important;
-  padding: 0.5rem 0rem;
+  color: white !important;
+  border: none !important;
 }
 
-.ce-feed-container-bottom {
-  height: "44px";
-}
+/* Connecting Button Styles */
 
-.ce-message-images-row {
-  background-color: #161616;
-}
-
-.ce-their-message-sender {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.ce-their-message-bubble {
-  background-color: #161616;
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Chat Settings */
-
-.ce-settings {
-  background-color: #161616;
-  border-radius: 0px;
-}
-
-.ce-chat-title-form .ce-text-input {
-  background-color: #161616;
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.ce-section-title-container {
-  background-color: #161616;
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-#ce-options-drop-down {
-  background-color: #161616;
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.ce-person-text {
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.ce-danger-button {
-  background-color: #161616;
-  border: 1px solid #ac54d4;
-  color: #ac54d4;
-}
-
-.ce-autocomplete-close {
-  background-color: #ffffff;
-  border-radius: 0px;
+#ce-connecting-popup {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
 }
