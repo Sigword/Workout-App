@@ -1,3 +1,5 @@
+import styles from "../styles/Chats.module.css";
+
 import React, { useState, useEffect, useContext } from "react";
 
 import { Context } from "../context";
@@ -31,10 +33,10 @@ export default function Chats() {
   if (!showChat) return <div />;
 
   return (
-    <div className="background">
-      <div className="shadow">
+    <div className={styles.background}>
+      <div className={styles.shadow}>
         <ChatEngine
-          height="calc(100vh - 200px)"
+          height="calc(100vh)" //height="calc(100vh - 200px)"
           projectID="09b46b68-cf1d-46f0-af2e-525f33d9f851"
           userName={username}
           userSecret={secret}

@@ -61,3 +61,224 @@ a {
   width: 100%;
   text-align: center;
 }
+
+/* Chat Stylings */
+
+/* Chat List */
+.ce-wrapper {
+  background-color: #161616;
+}
+
+.ce-chats-container {
+  background-color: #161616;
+  border-radius: 0px;
+}
+
+.ce-chat-form-container {
+  background-color: #161616;
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ce-chat-card {
+  margin: 0px 6px;
+}
+
+.ce-chat-card-loading-bar {
+  background-color: #161616;
+}
+
+.ce-active-chat-card {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+}
+
+.ce-chat-title-text {
+  color: white;
+}
+
+.ce-chat-subtitle-text {
+  color: #ffffff;
+}
+
+.ce-chat-unread-dot {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Chat Feed */
+
+.ce-chat-title {
+  background-color: #0c0c0c !important;
+}
+
+.ce-chat-list-mobile-option svg {
+  color: white;
+}
+
+.ce-chat-settings-mobile-option svg {
+  color: white;
+}
+
+.ce-chat-feed-container {
+  background-color: #161616;
+}
+
+.ce-primary-button {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+}
+
+.ce-message-date-text {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ce-my-message-bubble {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; */
+}
+
+.ce-my-message-sinding-bubble {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+}
+
+.ce-my-message-timestamp {
+  color: #9a97fc;
+}
+
+.ce-their-message-timestamp {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#ce-send-message-button {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+}
+
+#ce-ice-breaker-gif {
+  max-width: 115px;
+  margin-top: 30px;
+}
+
+.ce-social-message-form {
+  background-color: #161616;
+}
+
+.ce-message-input-form {
+  padding-bottom: 10px;
+  background-color: #0c0c0c;
+}
+
+.ce-message-input-form {
+}
+
+#msg-textarea {
+  width: calc(100% - 140px);
+  background-color: #0c0c0c;
+  color: white;
+  border: none !important;
+}
+#msg-textarea::placeholder {
+  /* background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; */
+}
+
+#upload-document-button svg {
+  color: white;
+}
+
+#ce-upload-document-icon {
+  color: white;
+}
+
+#ce-feed-container {
+  background-color: #161616 !important;
+}
+
+#msg-form-container {
+  background-color: #0c0c0c !important;
+  padding: 0.5rem 0rem;
+}
+
+.ce-feed-container-bottom {
+  height: "44px";
+}
+
+.ce-message-images-row {
+  background-color: #161616;
+}
+
+.ce-their-message-sender {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ce-their-message-bubble {
+  background-color: #161616;
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Chat Settings */
+
+.ce-settings {
+  background-color: #161616;
+  border-radius: 0px;
+}
+
+.ce-chat-title-form .ce-text-input {
+  background-color: #161616;
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ce-section-title-container {
+  background-color: #161616;
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#ce-options-drop-down {
+  background-color: #161616;
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ce-person-text {
+  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ce-danger-button {
+  background-color: #161616;
+  border: 1px solid #ac54d4;
+  color: #ac54d4;
+}
+
+.ce-autocomplete-close {
+  background-color: #ffffff;
+  border-radius: 0px;
+}

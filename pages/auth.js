@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 
+import styles from "../styles/Auth.module.css";
+
 import { Context } from "../context";
 
 import { useRouter } from "next/router";
@@ -24,29 +26,29 @@ export default function Auth() {
       .then((r) => router.push("/chats"));
   }
   return (
-    <div className="background">
-      <div className="auth-container">
-        <form className="auth-form" onSubmit={(e) => onSubmit(e)}>
-          <div className="auth-title">SOA Chat</div>
+    <div className={styles.background}>
+      <div className={styles.authContainer}>
+        <form className={styles.authForm} onSubmit={(e) => onSubmit(e)}>
+          <div className={styles.authTitle}>SOA Chat</div>
 
-          <div className="input-container">
+          <div className={styles.inputContainer}>
             <input
               placeholder="Email"
-              className="text-input"
+              className={styles.textInput}
               onChange={(e) => setUsername(e.target.value)}
             ></input>
           </div>
 
-          <div className="input-container">
+          <div className={styles.inputContainer}>
             <input
               type="password"
               placeholder="Password"
-              className="text-input"
+              className={styles.textInput}
               onChange={(e) => setSecret(e.target.value)}
             ></input>
           </div>
 
-          <button type="submit" className="submit-button">
+          <button type="submit" className={styles.submitButton}>
             Login / Sign Up
           </button>
         </form>

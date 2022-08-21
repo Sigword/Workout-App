@@ -1,30 +1,35 @@
 .background {
-  padding: 100px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: calc(100vw - 200px);
-  height: calc(100vh - 200px);
-  background: linear-gradient(150deg, #0c0c0c, #161616 100%, #161616 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  /* background: linear-gradient(150deg, #0c0c0c, #161616 100%, #161616 0); */
+  background: linear-gradient(
+    128.51deg,
+    rgba(255, 0, 229, 0.75) 9.11%,
+    rgba(44, 10, 255, 0.75) 89.13%
+  );
 }
 
-.auth-container {
+.authContainer {
   display: flex;
+  margin: 1.5rem;
+  padding: 1rem;
   width: 100%;
-  position: relative;
-  height: 40%;
+  min-height: 40%;
   background-color: #161616;
-  border-radius: 24px;
+  border-radius: 20px;
   box-shadow: 0 2px 15px rgb(0 0 0 / 68%);
 }
 
-.auth-form {
+.authForm {
   padding-top: 33px;
   width: 60%;
   margin-left: 20%;
 }
 
-.auth-title {
+.authTitle {
   padding-bottom: 20px;
   width: 100%;
   text-align: center;
@@ -33,9 +38,11 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
-.text-input {
+.textInput {
   width: 100%;
   padding: 8px;
   margin-bottom: 24px;
@@ -46,11 +53,11 @@
   color: white;
 }
 
-.text-input::placeholder {
+.textInput::placeholder {
   color: hsla(0, 0%, 100%, 0.568);
 }
 
-.submit-button {
+.submitButton {
   width: 100%;
   padding: 14px;
   border-radius: 4px;
@@ -61,6 +68,6 @@
   outline: none;
 }
 
-.submit-button::hover {
+.submitButton:hover {
   background-color: #938ffe;
 }
