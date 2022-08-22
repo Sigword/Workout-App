@@ -191,6 +191,14 @@ a {
   ) !important;
 }
 
+.ce-section-title:focus {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
+}
+
 .ce-person-container {
   color: white !important;
 }
@@ -206,6 +214,14 @@ a {
 }
 
 #ce-options-drop-down:hover {
+  background: linear-gradient(
+    128.51deg,
+    #ff00e5 9.11%,
+    #2c0aff 89.13%
+  ) !important;
+}
+
+#ce-options-drop-down:focus {
   background: linear-gradient(
     128.51deg,
     #ff00e5 9.11%,
