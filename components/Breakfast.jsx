@@ -1,4 +1,5 @@
 import styles from "../styles/Calories.module.css";
+import FoodModal from "./foodModal";
 
 const Breakfast = () => {
   return (
@@ -7,7 +8,7 @@ const Breakfast = () => {
         <span>Breakfast</span>
       </div>
       <div className={styles.calorieButton}>
-        <button>Add Food</button>
+        <FoodModal />
       </div>
     </div>
   );
