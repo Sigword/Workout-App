@@ -49,15 +49,17 @@ a {
 }
 
 .calendarDate {
-  padding: 10px 12px;
+  padding: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .calendarDateSelected {
   background: linear-gradient(133.51deg, #2c0aff 0.66%, #eb00ff 100.66%);
   border-radius: 100px;
-  padding: 10px 12px;
-
-  width: 100%;
+  padding: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
   text-align: center;
 }
 
