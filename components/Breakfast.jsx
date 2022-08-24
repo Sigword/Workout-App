@@ -1,14 +1,18 @@
+import { useState } from "react";
 import styles from "../styles/Calories.module.css";
-import FoodModal from "./foodModal";
+import FoodModal from "./FoodModal";
 
 const Breakfast = () => {
+  const [foodList, setFoodList] = useState([]);
+
   return (
     <div className={styles.calorieSubContainer}>
       <div className={styles.calorieHeading}>
         <span>Breakfast</span>
       </div>
+      <div>{foodList}</div>
       <div className={styles.calorieButton}>
-        <FoodModal />
+        <FoodModal foodList={foodList} setFoodList={setFoodList} />
       </div>
     </div>
   );

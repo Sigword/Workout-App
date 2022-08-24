@@ -7,7 +7,7 @@
 
 .quoteBox {
   background-color: #161616;
-  border-radius: 1rem;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   padding: 0.6rem;
@@ -30,8 +30,8 @@
   display: flex;
   justify-content: center;
   color: white;
-  background: linear-gradient(95.41deg, #2c0aff -0.18%, #eb00ff 99.82%);
-  border-radius: 1rem;
+  background: linear-gradient(128.51deg, #001aff 9.11%, #ff0a9d 89.13%);
+  border-radius: 25px;
   padding: 1rem;
 }
 

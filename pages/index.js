@@ -6,8 +6,11 @@ import Work from "../components/Work";
 import Quote from "../components/Quote";
 import styles from "../styles/Home.module.css";
 import Gym from "../components/GymTime";
+import { useState, useSyncExternalStore } from "react";
 
 export default function Home() {
+  const [calories, setCalories] = useState(0);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -20,7 +23,7 @@ export default function Home() {
       <Calendar />
       <Gym />
       <Quote />
-      <Work />
+      <Work calories={calories} />
       <Chat />
     </div>
   );

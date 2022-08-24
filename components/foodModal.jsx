@@ -1,9 +1,10 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import CustomFoodModal from "./CustomFoodModal";
 import styles from "../styles/FoodModal.module.css";
 import { BsArrowLeftShort } from "react-icons/bs";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineEnter } from "react-icons/ai";
 
-const FoodModal = () => {
+const FoodModal = ({ foodList, setFoodList }) => {
   return (
     <Dialog.Root>
       <Dialog.Trigger>Add Food</Dialog.Trigger>
@@ -20,9 +21,18 @@ const FoodModal = () => {
               Breakfast
             </Dialog.DialogTitle>
           </div>
-          <div className={styles.foodModalInput}>
-            <input id="name" defaultValue="Pedro Duarte" />
-            <AiOutlineArrowRight />
+          <div className={styles.foodModalInputContainer}>
+            <input
+              className={styles.foodModalInput}
+              id=""
+              placeholder="Search for food..."
+            />
+            <button className={styles.foodModalEnter}>
+              <AiOutlineEnter />
+            </button>
+          </div>
+          <div className={styles.customFoodContainer}>
+            <CustomFoodModal foodList={foodList} setFoodList={setFoodList} />
           </div>
         </Dialog.Content>
       </Dialog.Portal>
