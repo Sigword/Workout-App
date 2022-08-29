@@ -2,7 +2,7 @@ import styles from "../styles/Login.module.css";
 import { useRef, useState } from "react";
 import { signup, logout, login } from "../pages/firebase-config";
 
-const Login = ({ currentUser }) => {
+const Login = ({ currentUser, setSignedIn }) => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const [loading, setLoading] = useState(false);
@@ -15,6 +15,7 @@ const Login = ({ currentUser }) => {
       alert("Error!");
     }
     setLoading(false);
+    setSignedIn(true);
   };
 
   const handleLogin = async () => {
@@ -25,6 +26,7 @@ const Login = ({ currentUser }) => {
       alert("Error!");
     }
     setLoading(false);
+    setSignedIn(true);
   };
 
   const handleLogout = async () => {
@@ -35,29 +37,26 @@ const Login = ({ currentUser }) => {
       alert("Error!");
     }
     setLoading(false);
+    setSignedIn(false);
   };
 
   return (
-    <div>
-      <h1>Currenntly logged in as: {currentUser?.email}</h1>
+    <div className={styles.signUpContainer}>
+      <h1>
+        Currently logged in as: <span>{currentUser?.email}</span>
+      </h1>
+      <input ref={emailRef} type="text" placeholder="Email" />
+      <input ref={passwordRef} type="password" placeholder="Password" />
 
-      <div className={styles.signUpContainer}>
-        <input ref={emailRef} type="text" placeholder="Email" />
-        <input ref={passwordRef} type="password" placeholder="Password" />
+      <button disabled={loading || currentUser != null} onClick={handleSignup}>
+        Sign Up
+      </button>
 
-        <button
-          disabled={loading || currentUser != null}
-          onClick={handleSignup}
-        >
-          Sign Up
-        </button>
+      <button onClick={handleLogin}>Log In</button>
 
-        <button>Log In</button>
-
-        <button disabled={loading || !currentUser} onClick={handleLogout}>
-          Log Out
-        </button>
-      </div>
+      <button disabled={loading || !currentUser} onClick={handleLogout}>
+        Log Out
+      </button>
     </div>
   );
 };

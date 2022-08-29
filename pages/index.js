@@ -9,9 +9,11 @@ import Gym from "../components/GymTime";
 import styles from "../styles/Home.module.css";
 
 import { useAuth } from "./firebase-config";
+import { useState } from "react";
 
 export default function Home() {
   const currentUser = useAuth();
+  const [signedIn, setSignedIn] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -20,7 +22,18 @@ export default function Home() {
         <meta name="description" content="For the homies" />
       </Head>
 
-      <Login currentUser={currentUser} />
+      {signedIn ? (
+        <>
+          <Header />
+          <Calendar />
+          <Gym />
+          <Quote />
+          <Work />
+          <Chat />
+        </>
+      ) : (
+        <Login currentUser={currentUser} setSignedIn={setSignedIn} />
+      )}
     </div>
   );
 }
