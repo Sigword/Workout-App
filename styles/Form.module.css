@@ -1,0 +1,33 @@
+.formContainer {
+  display: flex;
+  background-color: #0c0c0c;
+  align-items: center;
+  justify-content: center;
+}
+
+.formBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.formTop {
+  display: flex;
+}
+
+.formName {
+  display: flex;
+}
+
+.formNotes {
+  display: flex;
+}
+
+.formBoxBottom {
+  display: flex;
+}
+
+.formMiddle {
+  display: flex;
+}

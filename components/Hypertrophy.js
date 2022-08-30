@@ -6,16 +6,12 @@ const Hypertrophy = () => {
     <div className={styles.WorkoutBox}>
       <div className={styles.WorkoutTop}>Hypertrophy</div>
       <div className={styles.WorkoutBottom}>
-        <Link>
-          <a className={styles.WorkoutButton}>Push</a>
-        </Link>
-        <Link>
-          <a className={styles.WorkoutButton}>Pull</a>
-        </Link>
-        <Link>
-          <a className={styles.WorkoutButton}>Legs</a>
-        </Link>
-        <Link>
+        <a className={styles.WorkoutButton}>Push</a>
+
+        <a className={styles.WorkoutButton}>Pull</a>
+
+        <a className={styles.WorkoutButton}>Legs</a>
+        <Link href="workouts/hypertrophyArms">
           <a className={styles.WorkoutButton}>Arms</a>
         </Link>
       </div>

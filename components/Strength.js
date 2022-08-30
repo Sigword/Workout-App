@@ -6,18 +6,13 @@ const Strength = () => {
     <div className={styles.WorkoutBox}>
       <div className={styles.WorkoutTop}>Strength</div>
       <div className={styles.WorkoutBottom}>
-        <Link>
-          <a className={styles.WorkoutButton}>Push</a>
-        </Link>
-        <Link>
-          <a className={styles.WorkoutButton}>Pull</a>
-        </Link>
-        <Link>
-          <a className={styles.WorkoutButton}>Legs</a>
-        </Link>
-        <Link>
-          <a className={styles.WorkoutButton}>Arms</a>
-        </Link>
+        <a className={styles.WorkoutButton}>Push</a>
+
+        <a className={styles.WorkoutButton}>Pull</a>
+
+        <a className={styles.WorkoutButton}>Legs</a>
+
+        <a className={styles.WorkoutButton}>Arms</a>
       </div>
     </div>
   );
