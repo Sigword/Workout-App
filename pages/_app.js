@@ -1,12 +1,12 @@
 import "../styles/globals.css";
-
-import { ContextProvider } from "../context";
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ContextProvider>
+    <>
       <Component {...pageProps} />
-    </ContextProvider>
+      <Navbar />
+    </>
   );
 }
 

@@ -2,7 +2,8 @@
 
 .calendarContainer {
   display: flex;
-  min-width: 100%;
+  width: 90%;
+  margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;

@@ -1,6 +1,6 @@
 .quoteMain {
-  background-color: #0c0c0c;
-  min-width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: block;
   justify-content: center;
 }

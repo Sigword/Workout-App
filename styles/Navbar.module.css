@@ -1,0 +1,13 @@
+.navbarContainer {
+  width: 90vw;
+  margin: 0 auto;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarContainer svg {
+  color: whitesmoke;
+  width: 30px;
+  height: 30px;
+}

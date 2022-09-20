@@ -1,6 +1,7 @@
 .gymTimeContainer {
   padding: 1rem 0rem;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
