@@ -4,6 +4,7 @@ import { db, auth } from "../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useState } from "react";
 import firebase from "firebase/compat/app";
+import styles from "../styles/Chat.module.css";
 
 const Chat = () => {
   const messagesRef = db.collection("messages");
@@ -30,22 +31,24 @@ const Chat = () => {
 
   return (
     <section>
-      <div>
+      <div className={styles.signOutContainer}>
         <SignOut />
       </div>
-      <div>
+      <div className={styles.chatContainer}>
         {messages &&
           messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
       </div>
-      <form onSubmit={sendMessage}>
-        <input
-          value={formValue}
-          onChange={(e) => {
-            setFormValue(e.target.value);
-          }}
-        />
-        <button type="submit">SEND</button>
-      </form>
+      <div className={styles.inputContainer}>
+        <form onSubmit={sendMessage}>
+          <input
+            value={formValue}
+            onChange={(e) => {
+              setFormValue(e.target.value);
+            }}
+          />
+          <button type="submit">SEND</button>
+        </form>
+      </div>
     </section>
   );
 };

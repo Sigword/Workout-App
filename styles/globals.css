@@ -279,3 +279,18 @@ a {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
 }
+
+/* Chat Styles */
+.message {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.sent {
+  align-items: flex-end;
+}
+
+.recieved {
+  align-items: flex-start;
+}

@@ -1,0 +1,46 @@
+/* Sign Out Section */
+.signOutContainer {
+  width: 90vw;
+  height: 5vh;
+  max-height: 5vh;
+}
+
+.signOutButton {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.signOutButton button {
+  border: none;
+  padding: 5px 20px;
+}
+
+.chatContainer {
+  height: 80vh;
+  max-height: 80vh;
+  width: 90vw;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.inputContainer {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer form {
+  width: 100%;
+}
+
+.inputContainer input {
+  width: 80%;
+}
+
+.inputContainer button {
+  width: 20%;
+}

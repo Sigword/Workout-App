@@ -1,5 +1,4 @@
 import { auth } from "../firebase";
-import Image from "next/image";
 
 const ChatMessage = (props) => {
   const { text, uid, photoURL } = props.message;
@@ -8,7 +7,7 @@ const ChatMessage = (props) => {
 
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL} />
+      <img src={photoURL} alt="User Profile Image" />
       <p>{text}</p>
     </div>
   );
